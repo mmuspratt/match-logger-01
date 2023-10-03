@@ -43,6 +43,14 @@ button:hover {
     color: transparent;  /* Makes the text invisible */
 }
 
+/* Media query for screens up to 375px wide */
+@media (max-width: 375px) {
+    .pitch-button {
+        width: 90px;
+        height: 81px; 
+    }
+}
+
 .action-button {
     background-color: white;
     color: black;  /* Makes the text visible */
