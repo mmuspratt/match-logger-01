@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: darkseagreen;
+    background-color: green;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -11,7 +11,7 @@ body {
 .container {
     text-align: center;
     padding: 20px;
-    background-color: green;
+    background-color: white;
     border-radius: 10px;
 }
 
@@ -24,25 +24,86 @@ h1 {
 }
 
 .row {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 button {
-    background-color: white;
-    color: black;
-    border: 1px solid black;
-    width: 100px;
-    height: 100px;
-    display: inline-block;
-    margin-right: 10px;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-button:last-child {
-    margin-right: 0;
+    border: none;
+    outline: none;       /* Removes focus outline */
 }
 
 button:hover {
+    opacity: 0.8;  /* This will give a subtle darkening effect when hovered */
+}
+
+.pitch-button {
+    background-size: cover;
+    width: 111px;
+    height: 100px;
+    color: transparent;  /* Makes the text invisible */
+}
+
+.action-button {
+    background-color: white;
+    color: black;  /* Makes the text visible */
+    padding: 10px 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer; /* Changes the mouse cursor when hovering */
+}
+
+.action-button:hover {
     background-color: black;
     color: white;
 }
+
+/* Images for the pitch buttons */
+button#attack_l {
+    background-image: url('button_images/slice_row1_col1.png');
+}
+
+button#attack_c {
+    background-image: url('button_images/slice_row1_col2.png');
+}
+
+button#attack_r {
+    background-image: url('button_images/slice_row1_col3.png');
+}
+
+button#attack_mid_l {
+    background-image: url('button_images/slice_row2_col1.png');
+}
+
+button#attack_mid_c {
+    background-image: url('button_images/slice_row2_col2.png');
+}
+
+button#attack_mid_r {
+    background-image: url('button_images/slice_row2_col3.png');
+}
+
+button#defend_mid_l {
+    background-image: url('button_images/slice_row3_col1.png');
+}
+
+button#defend_mid_c {
+    background-image: url('button_images/slice_row3_col2.png');
+}
+
+button#defend_mid_r {
+    background-image: url('button_images/slice_row3_col3.png');
+}
+
+button#defend_l {
+    background-image: url('button_images/slice_row4_col1.png');
+}
+
+button#defend_c {
+    background-image: url('button_images/slice_row4_col2.png');
+}
+
+button#defend_r {
+    background-image: url('button_images/slice_row4_col3.png');
+}
+

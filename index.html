@@ -11,28 +11,28 @@
         <h1>Match Spatial Logger</h1>
         <div class="buttons">
             <div class="row">
-                <button onclick="incrementCounter(1)">ATTACK L: <span id="count1">0</span></button>
-                <button onclick="incrementCounter(2)">ATTACK C: <span id="count2">0</span></button>
-                <button onclick="incrementCounter(3)">ATTACK R: <span id="count3">0</span></button>
+                <button class="pitch-button" id="attack_l" onclick="incrementCounter('ATTACK L')">ATTACK L: <span id="countATTACK L">0</span></button>
+                <button class="pitch-button" id="attack_c" onclick="incrementCounter('ATTACK C')">ATTACK C: <span id="countATTACK C">0</span></button>
+                <button class="pitch-button" id="attack_r" onclick="incrementCounter('ATTACK R')">ATTACK R: <span id="countATTACK R">0</span></button>
             </div>
             <div class="row">
-                <button onclick="incrementCounter(4)">ATTACK MID L: <span id="count4">0</span></button>
-                <button onclick="incrementCounter(5)">ATTACK MID C: <span id="count5">0</span></button>
-                <button onclick="incrementCounter(6)">ATTACK MID R: <span id="count6">0</span></button>
+                <button class="pitch-button" id="attack_mid_l" onclick="incrementCounter('ATTACK MID L')">ATTACK MID L: <span id="countATTACK MID L">0</span></button>
+                <button class="pitch-button" id="attack_mid_c" onclick="incrementCounter('ATTACK MID C')">ATTACK MID C: <span id="countATTACK MID C">0</span></button>
+                <button class="pitch-button" id="attack_mid_r" onclick="incrementCounter('ATTACK MID R')">ATTACK MID R: <span id="countATTACK MID R">0</span></button>
             </div>
             <div class="row">
-                <button onclick="incrementCounter(7)">DEFEND MID L: <span id="count7">0</span></button>
-                <button onclick="incrementCounter(8)">DEFEND MID C: <span id="count8">0</span></button>
-                <button onclick="incrementCounter(9)">DEFEND MID R: <span id="count9">0</span></button>
+                <button class="pitch-button" id="defend_mid_l" onclick="incrementCounter('DEFEND MID L')">DEFEND MID L: <span id="countDEFEND MID L">0</span></button>
+                <button class="pitch-button" id="defend_mid_c" onclick="incrementCounter('DEFEND MID C')">DEFEND MID C: <span id="countDEFEND MID C">0</span></button>
+                <button class="pitch-button" id="defend_mid_r" onclick="incrementCounter('DEFEND MID R')">DEFEND MID R: <span id="countDEFEND MID R">0</span></button>
             </div>
             <div class="row">
-                <button onclick="incrementCounter(10)">DEFEND L: <span id="count10">0</span></button>
-                <button onclick="incrementCounter(11)">DEFEND C: <span id="count11">0</span></button>
-                <button onclick="incrementCounter(12)">DEFEND R: <span id="count12">0</span></button>
+                <button class="pitch-button" id="defend_l" onclick="incrementCounter('DEFEND L')">DEFEND L: <span id="countDEFEND L">0</span></button>
+                <button class="pitch-button" id="defend_c" onclick="incrementCounter('DEFEND C')">DEFEND C: <span id="countDEFEND C">0</span></button>
+                <button class="pitch-button" id="defend_r" onclick="incrementCounter('DEFEND R')">DEFEND R: <span id="countDEFEND R">0</span></button>
             </div>
         </div>
-        <button onclick="exportCounts()">Export<br>Match Data</button>
-        <button onclick="resetCounts()">Reset<br>logger</button>
+        <button class="action-button" onclick="exportCounts()">Export<br>match data</button>
+        <button class="action-button" onclick="resetCounts()">Reset<br>logger</button>
     </div>
     <script src="script.js"></script>
 </body>
