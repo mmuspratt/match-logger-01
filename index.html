@@ -5,34 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Match Spatial Logger</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
 </head>
 <body>
     <div class="container">
         <h1>Match Spatial Logger</h1>
         <div class="buttons">
             <div class="row">
-                <button onclick="incrementCounter(1)">ATTACK L: <span id="count1">0</span></button>
-                <button onclick="incrementCounter(2)">ATTACK C: <span id="count2">0</span></button>
-                <button onclick="incrementCounter(3)">ATTACK R: <span id="count3">0</span></button>
+                <button class="counter-button" id="btn1" onclick="incrementCounter(1)"><span id="count1">0</span></button>
+                <button class="counter-button" id="btn2" onclick="incrementCounter(2)"><span id="count2">0</span></button>
+                <button class="counter-button" id="btn3" onclick="incrementCounter(3)"><span id="count3">0</span></button>
             </div>
             <div class="row">
-                <button onclick="incrementCounter(4)">ATTACK MID L: <span id="count4">0</span></button>
-                <button onclick="incrementCounter(5)">ATTACK MID C: <span id="count5">0</span></button>
-                <button onclick="incrementCounter(6)">ATTACK MID R: <span id="count6">0</span></button>
+                <button class="counter-button" id="btn4" onclick="incrementCounter(4)"><span id="count4">0</span></button>
+                <button class="counter-button" id="btn5" onclick="incrementCounter(5)"><span id="count5">0</span></button>
+                <button class="counter-button" id="btn6" onclick="incrementCounter(6)"><span id="count6">0</span></button>
             </div>
             <div class="row">
-                <button onclick="incrementCounter(7)">DEFEND MID L: <span id="count7">0</span></button>
-                <button onclick="incrementCounter(8)">DEFEND MID C: <span id="count8">0</span></button>
-                <button onclick="incrementCounter(9)">DEFEND MID R: <span id="count9">0</span></button>
+                <button class="counter-button" id="btn7" onclick="incrementCounter(7)"><span id="count7">0</span></button>
+                <button class="counter-button" id="btn8" onclick="incrementCounter(8)"><span id="count8">0</span></button>
+                <button class="counter-button" id="btn9" onclick="incrementCounter(9)"><span id="count9">0</span></button>
             </div>
             <div class="row">
-                <button onclick="incrementCounter(10)">DEFEND L: <span id="count10">0</span></button>
-                <button onclick="incrementCounter(11)">DEFEND C: <span id="count11">0</span></button>
-                <button onclick="incrementCounter(12)">DEFEND R: <span id="count12">0</span></button>
+                <button class="counter-button" id="btn10" onclick="incrementCounter(10)"><span id="count10">0</span></button>
+                <button class="counter-button" id="btn11" onclick="incrementCounter(11)"><span id="count11">0</span></button>
+                <button class="counter-button" id="btn12" onclick="incrementCounter(12)"><span id="count12">0</span></button>
             </div>
         </div>
-        <button onclick="exportCounts()">Export Counts</button>
-        <button onclick="resetCounts()">Reset</button>
+        <button class="action-button-export" onclick="exportCounts()">Export<br>data</button>
+        <button class="action-button-reset" onclick="resetCounts()">Reset<br>logger</button>
     </div>
     <script src="script.js"></script>
 </body>

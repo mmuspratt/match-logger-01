@@ -6,13 +6,13 @@ function incrementCounter(buttonNumber) {
 
 function exportCounts() {
     // Create an array to hold the data
-    let data = ['Event'];
+    let data = ['event_location_button'];
 
     // Loop through each button and get its count
     for (let i = 1; i <= 12; i++) {
         let countElement = document.getElementById(`count${i}`);
         let count = parseInt(countElement.textContent);
-        let buttonName = countElement.parentNode.textContent.split(":")[0];
+        let buttonName = countElement.parentNode.id;
 
         // Add button name 'count' times
         for (let j = 0; j < count; j++) {
@@ -30,7 +30,7 @@ function exportCounts() {
     let link = document.createElement("a");
     let url = URL.createObjectURL(blob);
     link.setAttribute("href", url);
-    let timestamp = new Date().toISOString().slice(0,19).replace("T", "_").replace(/:/g, "-"); link.setAttribute("download", `match_log_${timestamp}.csv`);
+    let timestamp = new Date().toISOString().slice(0,19).replace("T", "_").replace(/:/g, "-"); link.setAttribute("download", `match_log_${timestamp}_utc.csv`);
     link.style.visibility = 'hidden';
     document.body.appendChild(link);
     link.click();

@@ -11,7 +11,7 @@ body {
 .container {
     text-align: center;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: white;
     border-radius: 10px;
 }
 
@@ -27,22 +27,148 @@ h1 {
     margin-bottom: 10px;
 }
 
-button {
+/* Styles for counter buttons */
+.counter-button {
     background-color: white;
-    color: black;
-    border: 1px solid black;
+    color: lightgoldenrodyellow;
+    border: 1px solid white;
     width: 100px;
     height: 100px;
     display: inline-block;
     margin-right: 10px;
     transition: background-color 0.3s, color 0.3s;
+    border-radius: 10px;  /* Adjust this value as needed */
 }
 
-button:last-child {
+.counter-button:last-child {
     margin-right: 0;
 }
 
-button:hover {
+/*
+.counter-button:hover {
     background-color: black;
     color: white;
+}
+*/
+
+.counter-button span {
+    display: block; /* Make the span a block element to occupy full width of button */
+    padding-top: 60px; /* Adjust this value to move the counter downwards */
+    padding-right: 60px; /* Adjust this value to move the counter left */
+
+}
+
+/* Styles for action button export */
+.action-button-export {
+    background-color: green;
+    color: white;
+    border: 1px solid green;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 10px;
+    cursor: pointer; /* Changes the mouse cursor when hovering */
+    border-radius: 10px;  /* Adjust this value as needed */
+}
+
+.action-button-export:hover {
+    background-color: springgreen;
+    color: black;
+}
+
+/* Styles for action button reset */
+.action-button-reset {
+    background-color: darkred;
+    color: white;
+    border: 1px solid darkred;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 10px;
+    cursor: pointer; /* Changes the mouse cursor when hovering */
+    border-radius: 10px;  /* Adjust this value as needed */
+}
+
+.action-button-reset:hover {
+    background-color: red;
+    color: black;
+}
+
+/* Base styles optimized for mobile */
+.counter-button, .action-button-export, .action-button-reset {
+    width: 28%; /* Divide by roughly 3 since there are 3 buttons in a row, leaving some space for margins */
+    height: auto; /* Adjust the height proportionally */
+    padding: 5%;  /* Reduce padding to save space */
+    margin: 1%;  /* Reduce margins to save space */
+    font-size: 0.8em; /* Reduce font size to fit on smaller buttons */
+}
+
+/* Media query for screens larger than 768px */
+@media (min-width: 768px) {
+    .counter-button, .action-button-export, .action-button-reset {
+        width: 100px; /* Restore button width for larger screens */
+        height: 100px; /* Restore button height for larger screens */
+        padding: 10px; /* Restore padding */
+        margin: 10px;  /* Restore margin */
+        font-size: 1em; /* Restore font size */
+    }
+}
+
+/* Adding styles for counter-button images */
+.counter-button#btn1 {
+    background-image: url('button_images/slice_row1_col1.png');
+    background-size: cover;
+}
+
+.counter-button#btn2 {
+    background-image: url('button_images/slice_row1_col2.png');
+    background-size: cover;
+}
+
+.counter-button#btn3 {
+    background-image: url('button_images/slice_row1_col3.png');
+    background-size: cover;
+}
+
+.counter-button#btn4 {
+    background-image: url('button_images/slice_row2_col1.png');
+    background-size: cover;
+}
+
+.counter-button#btn5 {
+    background-image: url('button_images/slice_row2_col2.png');
+    background-size: cover;
+}
+
+.counter-button#btn6 {
+    background-image: url('button_images/slice_row2_col3.png');
+    background-size: cover;
+}
+
+.counter-button#btn7 {
+    background-image: url('button_images/slice_row3_col1.png');
+    background-size: cover;
+}
+
+.counter-button#btn8 {
+    background-image: url('button_images/slice_row3_col2.png');
+    background-size: cover;
+}
+
+.counter-button#btn9 {
+    background-image: url('button_images/slice_row3_col3.png');
+    background-size: cover;
+}
+
+.counter-button#btn10 {
+    background-image: url('button_images/slice_row4_col1.png');
+    background-size: cover;
+}
+
+.counter-button#btn11 {
+    background-image: url('button_images/slice_row4_col2.png');
+    background-size: cover;
+}
+
+.counter-button#btn12 {
+    background-image: url('button_images/slice_row4_col3.png');
+    background-size: cover;
 }
